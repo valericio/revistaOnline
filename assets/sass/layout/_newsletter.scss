@@ -1,0 +1,24 @@
+.newsletter {
+    width: 100%;
+    background-color: $quick-silver;;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display:block;
+}
+
+.newsletter h2 {
+    font-size: $x-large;
+}
+
+.group input, .group button {
+    display: inline-block;
+    border-width: 0;
+    font-size: $medium;
+    padding: 1% 3%;
+}
+
+.group button {
+    background-color: $light-red-ochre;
+    color: $white;
+}

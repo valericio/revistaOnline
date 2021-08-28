@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $oldStandar;
+}
+
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
+    grid-gap: 2%;
+}

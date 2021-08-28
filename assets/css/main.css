@@ -1,17 +1,215 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 15 | @import 'components/_buttons.csss';
- *    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   assets\sass\main.scss 15:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 15 \2502  @import 'components/_buttons.csss';\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   assets\\sass\\main.scss 15:9  root stylesheet";
+/* abstracts */
+/* color scheme*/
+/* first color */
+/* second color */
+/* thrid color */
+/* Font family */
+/* Font weight */
+/* Font size */
+/* base*/
+* {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Old Standar TT", serif;
+}
+
+.contenedor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 100%);
+  grid-gap: 2%;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*layout*/
+.contenido {
+  width: 100%;
+  background-color: #FFF;
+}
+
+.listad-noticias {
+  width: 75%;
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  grid-gap: 2%;
+}
+
+.noticia {
+  width: 98%;
+  display: inline-block;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.cuerpo img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.cuerpo p {
+  padding: 2% 4%;
+}
+
+.cabecera-listado, .tags {
+  width: 90%;
+  border-bottom: 2px solid #646266;
+}
+
+.tags ul {
+  padding: 0;
+  list-style: none;
+}
+
+.tags__container {
+  display: grid;
+  grid-template-columns: repeat(3, 29%);
+  grid-gap: 2%;
+}
+
+tags ul li {
+  padding: 3% 3%;
+  background-color: #E87554;
+  padding-right: 3%;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+}
+
+.noticias-destacadas {
+  padding-bottom: 10%;
+  width: 98%;
+}
+
+.noticias-destacadas img {
+  width: 98%;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .listad-noticias {
+    grid-gap: 2%;
+  }
+
+  .listado-izquierdo {
+    width: 24%;
+    float: right;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .listad-noticias {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 0%;
+    text-align: center;
+  }
+
+  .listado-izquierdo {
+    display: none;
+  }
+}
+.menu {
+  width: 100%;
+  padding-top: 1%;
+  border-bottom: 2px solid #A6A5A8;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+
+.nav {
+  text-align: right;
+  padding-right: 5%;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.input-menu {
+  border-radius: 30px;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .nav {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 16px;
+  }
+
+  .nav {
+    font-size: 14px;
+  }
+
+  .nav__item-none {
+    display: none;
+  }
+}
+.newsletter {
+  width: 100%;
+  background-color: #A6A5A8;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: block;
+}
+
+.newsletter h2 {
+  font-size: 20px;
+}
+
+.group input, .group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 16px;
+  padding: 1% 3%;
+}
+
+.group button {
+  background-color: #E87554;
+  color: #FFF;
+}
+
+.contenedor__footer {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.footer {
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

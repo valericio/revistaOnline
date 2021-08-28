@@ -1,0 +1,56 @@
+.menu {
+    width: 100%;
+    padding-top: 1%;
+    border-bottom: 2px solid $quick-silver;
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.logo{
+  font-weight: $bold;
+  text-transform: uppercase;
+  padding-left: 3%;
+  padding-top: 1%
+}
+
+.nav {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.input-menu {
+    border-radius: 30px;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+@media only screen and(min-width: 768px) {
+  .logo {
+      font-size: $xx-large;
+  }
+
+  .nav {
+    font-size: $large;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .logo {
+      font-size: $medium;
+  }
+
+  .nav {
+      font-size: $small;
+  }
+  .nav__item-none {
+    display: none;
+  }
+
+}
